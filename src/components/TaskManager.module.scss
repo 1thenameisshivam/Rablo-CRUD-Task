@@ -1,0 +1,126 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+
+  &:focus {
+    outline: none;
+    border-color: #0070f3;
+  }
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0051a2;
+  }
+}
+
+.taskList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.taskItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.taskText {
+  flex-grow: 1;
+  cursor: pointer;
+
+  &.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+}
+
+.editButton,
+.deleteButton,
+.saveButton {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.editButton {
+  background-color: #ffa500;
+  color: white;
+
+  &:hover {
+    background-color: #cc8400;
+  }
+}
+
+.deleteButton {
+  background-color: #ff4136;
+  color: white;
+
+  &:hover {
+    background-color: #cc342b;
+  }
+}
+
+.saveButton {
+  background-color: #2ecc40;
+  color: white;
+
+  &:hover {
+    background-color: #25a233;
+  }
+}
+
+.editForm {
+  display: flex;
+  flex-grow: 1;
+}
+
+.editInput {
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+
+  &:focus {
+    outline: none;
+    border-color: #0070f3;
+  }
+}
